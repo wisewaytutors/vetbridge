@@ -2,16 +2,26 @@
 import { useState } from 'react';
 import { Bot, X, Send, MessageSquare } from 'lucide-react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function FloatingAI() {
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState('');
+  const router = useRouter();
 
   const handleSend = (e) => {
     e.preventDefault();
     if (!message.trim()) return;
     // Handle message sending
     setMessage('');
+  };
+
+  const handleButtonClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleOpenFullChat = () => {
+    router.push('/ai');
   };
 
   return (
@@ -26,12 +36,20 @@ export default function FloatingAI() {
                 <Bot className="w-6 h-6" />
                 <span className="font-semibold">AI Health Assistant</span>
               </div>
-              <button
-                onClick={() => setIsOpen(false)}
-                className="text-white hover:bg-primary-700 rounded-full p-1 transition"
-              >
-                <X className="w-5 h-5" />
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={handleOpenFullChat}
+                  className="text-white hover:bg-primary-700 rounded-full p-1 transition text-sm"
+                >
+                  Open Full
+                </button>
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="text-white hover:bg-primary-700 rounded-full p-1 transition"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
             </div>
           </div>
 
@@ -69,17 +87,14 @@ export default function FloatingAI() {
       )}
 
       {/* Circular Button */}
-      <Link href="/ai">
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="w-16 h-16 bg-primary-600 hover:bg-primary-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-2xl"
-        >
-          <Bot className="w-8 h-8" />
-        </button>
-      </Link>
-
-      {/* Pulse Animation */}
-      <div className="absolute inset-0 bg-primary-600 rounded-full animate-ping opacity-75"></div>
+      <button
+        onClick={handleButtonClick}
+        className="w-16 h-16 bg-primary-600 hover:bg-primary-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-2xl relative"
+      >
+        <Bot className="w-8 h-8" />
+        {/* Pulse Animation */}
+        <div className="absolute inset-0 bg-primary-600 rounded-full animate-ping opacity-75"></div>
+      </button>
     </div>
   );
 }
