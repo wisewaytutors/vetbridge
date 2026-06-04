@@ -118,19 +118,19 @@ export default function VetDetailPage({ params }) {
                   <>
                     <div className="border rounded-lg p-4">
                       <h3 className="font-semibold text-gray-900">General Checkup</h3>
-                      <p className="text-primary-600 font-bold">KES 1,500</p>
+                      <p className="text-primary-600 font-bold">ETB 1,500</p>
                     </div>
                     <div className="border rounded-lg p-4">
                       <h3 className="font-semibold text-gray-900">Vaccination</h3>
-                      <p className="text-primary-600 font-bold">KES 2,000</p>
+                      <p className="text-primary-600 font-bold">ETB 2,000</p>
                     </div>
                     <div className="border rounded-lg p-4">
                       <h3 className="font-semibold text-gray-900">Dental Cleaning</h3>
-                      <p className="text-primary-600 font-bold">KES 3,000</p>
+                      <p className="text-primary-600 font-bold">ETB 3,000</p>
                     </div>
                     <div className="border rounded-lg p-4">
                       <h3 className="font-semibold text-gray-900">Surgery Consultation</h3>
-                      <p className="text-primary-600 font-bold">KES 2,500</p>
+                      <p className="text-primary-600 font-bold">ETB 2,500</p>
                     </div>
                   </>
                 )}
@@ -219,18 +219,18 @@ export default function VetDetailPage({ params }) {
                   className="flex items-center gap-3 text-gray-600 hover:text-primary-600"
                 >
                   <Phone className="w-5 h-5" />
-                  {vet.phone || '+254 712 345 678'}
+                  {vet.phone || '+251 911 234 567'}
                 </a>
                 <a
                   href={`mailto:${vet.email}`}
                   className="flex items-center gap-3 text-gray-600 hover:text-primary-600"
                 >
                   <Mail className="w-5 h-5" />
-                  {vet.email || 'vet@clinic.ke'}
+                  {vet.email || 'vet@clinic.et'}
                 </a>
                 <div className="flex items-center gap-3 text-gray-600">
                   <MapPin className="w-5 h-5" />
-                  {vet.address || '123 Westlands Road, Nairobi'}
+                  {vet.address || '123 Bole Road, Addis Ababa'}
                 </div>
               </div>
             </div>

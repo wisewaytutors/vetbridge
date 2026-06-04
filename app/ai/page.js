@@ -117,7 +117,7 @@ export default function AIAssistantPage() {
                   className={`p-4 rounded-2xl ${
                     message.sender === 'user'
                       ? 'bg-primary-600 text-white'
-                      : 'bg-white border border-gray-200'
+                      : 'bg-white border border-gray-200 text-gray-900'
                   }`}
                 >
                   <p className="text-sm">{message.text}</p>
