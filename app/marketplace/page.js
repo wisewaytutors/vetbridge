@@ -14,10 +14,13 @@ export default function MarketplacePage() {
 
   const categories = [
     { id: 'all', label: 'All' },
-    { id: 'food', label: 'Food' },
-    { id: 'toys', label: 'Toys' },
-    { id: 'accessories', label: 'Accessories' },
-    { id: 'medicine', label: 'Medicine' },
+    { id: 'livestock', label: 'Livestock' },
+    { id: 'pets', label: 'Pets' },
+    { id: 'feeds', label: 'Animal Feeds' },
+    { id: 'dairy', label: 'Dairy Products' },
+    { id: 'medicine', label: 'Veterinary Medicine' },
+    { id: 'equipment', label: 'Equipment' },
+    { id: 'services', label: 'Services' },
   ];
 
   useEffect(() => {
@@ -49,8 +52,8 @@ export default function MarketplacePage() {
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Pet Marketplace</h1>
-          <p className="text-gray-600">Buy pet products from local sellers</p>
+          <h1 className="text-4xl font-extrabold text-gray-900 mb-2">VetBridge Marketplace</h1>
+          <p className="text-gray-600">Buy & sell livestock, pets, animal feeds, veterinary products, dairy, and more from clinics, professionals, and businesses across Ethiopia</p>
         </div>
 
         {/* Search */}

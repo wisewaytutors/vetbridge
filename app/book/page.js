@@ -222,7 +222,7 @@ function BookPageContent() {
               </div>
               <div className="flex justify-between pt-2 border-t border-primary-200">
                 <span className="text-gray-600">Consultation Fee:</span>
-                <span className="font-bold text-primary-600">{vet?.price || 'KES 1,500'}</span>
+                <span className="font-bold text-primary-600">{vet?.price || 'ETB 1,500'}</span>
               </div>
             </div>
           </div>

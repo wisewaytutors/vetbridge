@@ -80,7 +80,7 @@ export default function ProductDetailPage({ params }) {
           <div className="space-y-6">
             <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-200">
               <h1 className="text-3xl font-bold text-gray-900 mb-2">{product.name}</h1>
-              <p className="text-gray-600 mb-4">{product.description || 'High quality pet product from trusted local sellers.'}</p>
+              <p className="text-gray-600 mb-4">{product.description || 'High quality veterinary product from trusted sellers across Ethiopia.'}</p>
               
               <div className="flex items-center gap-4 mb-4">
                 <StarRating rating={product.rating} reviews={product.reviews} />
@@ -173,10 +173,10 @@ export default function ProductDetailPage({ params }) {
             <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-200">
               <h2 className="text-xl font-bold text-gray-900 mb-4">Delivery Information</h2>
               <div className="space-y-2 text-gray-600">
-                <p>• Delivery available within Nairobi</p>
+                <p>• Delivery available across Ethiopia</p>
                 <p>• Standard delivery: 2-3 business days</p>
                 <p>• Express delivery: 1 business day</p>
-                <p>• Free delivery on orders over KES 5,000</p>
+                <p>• Free delivery on orders over ETB 5,000</p>
               </div>
             </div>
           </div>
