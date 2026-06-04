@@ -46,26 +46,26 @@ export default function AIAssistantPage() {
     setInput('');
     setLoading(true);
 
-    try {
-      const response = await ownerAPI.chatWithAI(input);
+    // Simulate AI response for demo purposes
+    setTimeout(() => {
+      const responses = [
+        'Based on your question, I recommend consulting with a veterinarian for the best advice on this matter.',
+        'This is an important health concern. I suggest scheduling an appointment with a vet for proper diagnosis.',
+        'For this issue, it would be best to have your pet examined by a professional veterinarian.',
+        'I understand your concern. While I can provide general guidance, a vet visit would give you the most accurate diagnosis.',
+        'This sounds like it needs professional attention. Would you like me to help you find a nearby veterinarian?',
+      ];
+      const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+      
       const aiMessage = {
         id: Date.now() + 1,
-        text: response.message || 'I understand your concern. Based on the symptoms you\'ve described, I recommend scheduling a vet visit for a proper diagnosis. Would you like me to help you find a nearby vet?',
+        text: randomResponse,
         sender: 'ai',
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, aiMessage]);
-    } catch (error) {
-      const errorMessage = {
-        id: Date.now() + 1,
-        text: 'Sorry, I encountered an error. Please try again.',
-        sender: 'ai',
-        timestamp: new Date(),
-      };
-      setMessages((prev) => [...prev, errorMessage]);
-    } finally {
       setLoading(false);
-    }
+    }, 1000);
   };
 
   const handleQuickQuestion = (question) => {
