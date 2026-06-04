@@ -130,7 +130,7 @@ export default function LoginPage() {
                     type="tel"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="+254 7XX XXX XXX"
+                    placeholder="+251 9XX XXX XXX"
                     className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     required
                   />
