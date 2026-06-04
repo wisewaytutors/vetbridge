@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-xl font-bold">VetBridge</span>
             </Link>
             <p className="text-gray-400 mb-4">
-              Connecting pet owners with trusted veterinarians across Kenya.
+              Connecting pet owners with trusted veterinarians across Ethiopia.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition">
@@ -88,15 +88,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-gray-400">
                 <Mail className="w-4 h-4" />
-                <span>support@vetbridge.ke</span>
+                <span>support@vetbridge.et</span>
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <Phone className="w-4 h-4" />
-                <span>+254 712 345 678</span>
+                <span>+251 911 234 567</span>
               </li>
               <li className="flex items-start gap-2 text-gray-400">
                 <MapPin className="w-4 h-4 mt-1" />
-                <span>Nairobi, Kenya</span>
+                <span>Addis Ababa, Ethiopia</span>
               </li>
             </ul>
           </div>
