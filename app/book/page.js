@@ -1,11 +1,11 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Calendar, Clock, MapPin, PawPrint, ArrowLeft, Check } from 'lucide-react';
 import { ownerAPI } from '@/lib/api';
 import { auth } from '@/lib/auth';
 
-export default function BookPage() {
+function BookPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [loading, setLoading] = useState(false);
@@ -237,5 +237,13 @@ export default function BookPage() {
         </form>
       </div>
     </div>
+  );
+}
+
+export default function BookPage() {
+  return (
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div></div>}>
+      <BookPageContent />
+    </Suspense>
   );
 }
