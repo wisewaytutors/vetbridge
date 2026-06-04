@@ -54,10 +54,6 @@ export default function MarketplacePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header with Post Button */}
         <div className="flex justify-between items-center mb-8">
-          <div>
-            <h1 className="text-4xl font-extrabold text-gray-900 mb-2">VetBridge Marketplace</h1>
-            <p className="text-gray-600">Buy & sell livestock, pets, animal feeds, veterinary products, dairy, and more from clinics, professionals, and businesses across Ethiopia</p>
-          </div>
           <Link
             href="/marketplace/post"
             className="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition flex items-center gap-2 shadow-lg"
@@ -65,11 +61,15 @@ export default function MarketplacePage() {
             <Plus className="w-5 h-5" />
             Post Product
           </Link>
+          <div className="text-right">
+            <h1 className="text-4xl font-extrabold text-gray-900 mb-2">VetBridge Marketplace</h1>
+            <p className="text-gray-600">Buy & sell livestock, pets, animal feeds, veterinary products, dairy, and more from clinics, professionals, and businesses across Ethiopia</p>
+          </div>
         </div>
 
         {/* Search */}
         <form onSubmit={handleSearch} className="mb-6">
-          <div className="relative">
+          <div className="relative max-w-2xl mx-auto">
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
               type="text"
