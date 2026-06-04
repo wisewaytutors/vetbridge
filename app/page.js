@@ -7,7 +7,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
             Your Pet's Health, <span className="text-primary-600">Connected</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
@@ -28,7 +28,7 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Why Choose VetBridge?</h2>
+          <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12">Why Choose VetBridge?</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6 rounded-xl bg-gray-50 hover:bg-primary-50 transition">
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -58,7 +58,7 @@ export default function Home() {
       {/* How It Works */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">How It Works</h2>
+          <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12">How It Works</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
@@ -83,16 +83,16 @@ export default function Home() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900">Featured Veterinarians</h2>
+            <h2 className="text-4xl font-extrabold text-gray-900">Featured Veterinarians</h2>
             <Link href="/vets" className="text-primary-600 font-semibold hover:underline flex items-center gap-1">
               View All <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { name: 'Dr. Sarah Kimani', specialty: 'Small Animal', rating: 4.8, reviews: 234, location: 'Westlands, Nairobi' },
-              { name: 'Dr. James Ochieng', specialty: 'Surgery', rating: 4.9, reviews: 189, location: 'CBD, Nairobi' },
-              { name: 'Dr. Grace Wanjiku', specialty: 'Dental', rating: 4.7, reviews: 156, location: 'Kilimani, Nairobi' },
+              { name: 'Dr. Abebe Bekele', specialty: 'Small Animal', rating: 4.8, reviews: 234, location: 'Bole, Addis Ababa' },
+              { name: 'Dr. Tadesse Haile', specialty: 'Surgery', rating: 4.9, reviews: 189, location: 'Kazanchis, Addis Ababa' },
+              { name: 'Dr. Selam Tesfaye', specialty: 'Dental', rating: 4.7, reviews: 156, location: 'Bole, Addis Ababa' },
             ].map((vet, index) => (
               <div key={index} className="border rounded-xl p-6 hover:shadow-lg transition cursor-pointer">
                 <div className="flex items-center gap-4 mb-4">
@@ -122,7 +122,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 px-4 bg-primary-600">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to Get Started?</h2>
+          <h2 className="text-4xl font-extrabold text-white mb-4">Ready to Get Started?</h2>
           <p className="text-primary-100 mb-8 text-lg">Join thousands of pet owners who trust VetBridge for their pet's healthcare needs.</p>
           <Link href="/auth/login" className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
             Create Free Account
