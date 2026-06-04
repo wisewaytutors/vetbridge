@@ -119,7 +119,7 @@ export default function VetDashboardPage() {
               </div>
               <span className="text-gray-600">This Week</span>
             </div>
-            <p className="text-2xl font-bold text-gray-900">{stats?.weekEarnings || 'KES 0'}</p>
+            <p className="text-2xl font-bold text-gray-900">{stats?.weekEarnings || 'ETB 0'}</p>
             <p className="text-sm text-gray-600">Earnings</p>
           </div>
           <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-200">

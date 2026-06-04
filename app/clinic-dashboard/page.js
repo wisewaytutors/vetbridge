@@ -80,7 +80,7 @@ export default function ClinicDashboardPage() {
               </div>
               <span className="text-gray-600">Revenue</span>
             </div>
-            <p className="text-2xl font-bold text-gray-900">{stats?.weekRevenue || 'KES 0'}</p>
+            <p className="text-2xl font-bold text-gray-900">{stats?.weekRevenue || 'ETB 0'}</p>
             <p className="text-sm text-gray-600">This Week</p>
           </div>
           <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-200">
